@@ -1,16 +1,89 @@
-# React + Vite
+# Jordan Lerat Portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Overview
 
-Currently, two official plugins are available:
+This repository contains the source code for my personal portfolio website.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+The portfolio is being built using **React** and **Vite**, and serves as a central location to showcase my projects, technical skills, education, certifications, and professional experience as a Full Stack Web Development student.
 
-## React Compiler
+The website is currently under construction and will continue to be updated as new projects and experience are added.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+**Live Website:** https://jordanlerat.dev
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Planned Features
+
+The portfolio will include the following sections:
+
+- Home / Landing Page
+- About Me
+- Technical Skills
+- Featured Projects
+- Resume
+- Contact Information
+
+Additional features planned include:
+
+- Responsive design for desktop and mobile devices
+- Smooth scrolling navigation
+- Project screenshots and detailed descriptions
+- GitHub repository links
+- Resume download
+- Contact form
+- Modern animations and transitions
+- Dark theme UI
+
+---
+
+## Planned Projects
+
+The portfolio will showcase many of the projects completed throughout my Full Stack Web Development diploma, including:
+
+- Pokemon CMS (PHP & MySQL)
+- Pokemon Rails Project
+- React Component Library with Storybook
+- Docker React Development Environment
+- Flask Image Conversion API
+- Dash Data Visualization Dashboard
+- Web Security Labs
+- Pentesting Report
+- BodyEra Website
+- Future Personal and Professional Projects
+
+---
+
+## Technologies
+
+This project is being built with:
+
+- React
+- Vite
+- JavaScript
+- HTML5
+- CSS3
+- Git
+- GitHub
+- GitHub Pages
+
+---
+
+## Current Status
+
+🚧 Under Construction
+
+The portfolio is actively being developed and new features, projects, and improvements will be added over time.
+
+---
+
+## Author
+
+**Jordan Lerat**
+
+Full Stack Web Development Student
+
+Red River College Polytechnic
+
+GitHub: https://github.com/Nyles-Ler
+
+Portfolio: https://jordanlerat.dev
