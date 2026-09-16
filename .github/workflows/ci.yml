@@ -1,0 +1,52 @@
+# Name of the workflow that will appear in the GitHub Actions tab
+name: Code Quality Checks
+
+# Run this workflow whenever code is pushed to main
+# or when a pull request is opened for main
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  # Main job that performs all of the code quality checks
+  quality-checks:
+    # Use the latest Ubuntu virtual machine provided by GitHub
+    runs-on: ubuntu-latest
+
+    steps:
+      # Download the repository code into the virtual machine
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+
+      # Install Node.js so npm commands can be used
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          # Use Node.js version 20
+          node-version: 20
+          # Cache npm packages to speed up future workflow runs
+          cache: npm
+
+      # Install all project dependencies from package.json
+      - name: Install Dependencies
+        run: npm install
+
+      # Verify that all files follow the Prettier formatting rules
+      - name: Check Formatting
+        run: npm run format:check
+
+      # Run ESLint to check for code quality issues
+      - name: Run ESLint
+        run: npm run lint
+
+      # Run all unit tests to make sure components still work
+      - name: Run Tests
+        run: npm test -- --watchAll=false
+
+      # Create a production build to verify the project builds successfully
+      - name: Build Project
+        run: npm run build
